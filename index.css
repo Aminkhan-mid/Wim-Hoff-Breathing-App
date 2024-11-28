@@ -55,8 +55,8 @@ button:hover{
 .checkboxContainer {
     background-color: magenta;
     font-family: Arial, Helvetica, sans-serif;
-    width: 290px;
-    height: 350px;
+    width: 270px;
+    height: 260px;
     padding: 20px 40px;
     border-radius: 20px;
     display: flex;
@@ -65,7 +65,7 @@ button:hover{
     margin: auto;
 }
 .checkboxContainer h1{
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: #333;
     margin: 0px;
 }
