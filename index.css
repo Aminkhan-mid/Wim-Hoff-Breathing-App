@@ -53,7 +53,8 @@ button:hover{
 .checkboxContainer {
     background-color: magenta;
     font-family: Arial, Helvetica, sans-serif;
-    width: 380px;
+    width: 80%;
+    max-width: 720px;
     height: 380px;
     padding: 20px 40px;
     border-radius: 20px;
