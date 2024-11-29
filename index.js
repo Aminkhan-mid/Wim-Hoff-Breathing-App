@@ -1,3 +1,19 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"
+import { getDatabase,
+         ref,
+         set,
+         get } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js"
+
+const firebaseConfig = {
+    databaseURL: "https://wim-hof-breathwork-app-default-rtdb.asia-southeast1.firebasedatabase.app/"
+}
+
+
+const app = initializeApp(firebaseConfig)
+const database = getDatabase(app)
+const referenceInDB = ref(database, "checkboxes")
+
+
 const hofAudio = document.getElementById('hofAudio')
 const videoTwo = document.getElementById('breathVideo')
 
@@ -44,3 +60,24 @@ closeQuickBreath.addEventListener('click', function (){
     document.getElementById('breathContainer').style.display = 'none'
     location.reload()
 })
+
+const checkboxes = document.querySelectorAll(".checkboxList input[type='checkbox']")
+
+checkboxes.forEach((checkbox, index) => {
+    const checkboxId = `checkbox-${index + 1}`
+    checkbox.id = checkboxId
+
+    get(ref(database, `checkboxes/${checkboxId}`)).then((snapshot)=>{
+        if(snapshot.exists()){
+            checkbox.checked = snapshot.val()
+        }
+
+        checkbox.addEventListener("change", () => {
+            set(ref(database, `checkboxes/${checkboxId}`), checkbox.checked)
+        })
+        
+
+
+    })
+})
+
