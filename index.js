@@ -13,11 +13,11 @@ const breathContainer =   document.getElementById('breathContainer')
 toggleBtn.addEventListener('click', () => {
     if(videoOne.paused){
         videoOne.play()
-        toggleBtn.textContent = 'Pause'
+        toggleBtn.innerHTML = '<i class="fa-solid fa-pause"></i>'
         toggleBtn.style.backgroundColor = '#e76f51'
     } else {
         videoOne.pause()
-        toggleBtn.textContent = 'Play'
+        toggleBtn.innerHTML = '<i class="fa-solid fa-play"></i>'
         toggleBtn.style.backgroundColor = '#c1121f'
     }
 }) 
@@ -25,8 +25,10 @@ toggleBtn.addEventListener('click', () => {
 toggleBtnEnergy.addEventListener('click', function(){
     if(videoTwo.paused){
         videoTwo.play()
+        toggleBtnEnergy.innerHTML = '<i class="fa-solid fa-pause"></i>'
     } else{
         videoTwo.pause()
+           toggleBtnEnergy.innerHTML = '<i class="fa-solid fa-play"></i>'
     }
 })
 
