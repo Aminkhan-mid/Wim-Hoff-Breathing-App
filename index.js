@@ -4,6 +4,9 @@ const pauseBtn = document.getElementById('pauseBtn')
 
 const toggleBtn = document.getElementById('toggleBtn')
 
+
+
+
 toggleBtn.addEventListener('click', () => {
     if(video.paused){
         video.play()
@@ -12,22 +15,19 @@ toggleBtn.addEventListener('click', () => {
         video.pause()
         toggleBtn.textContent = 'Play'
     }
+    const totalMinutes = Math.floor(video.duration / 60)
+    const currentMintues = Math.floor(video.currentTime / 60)
+
+    document.getElementById('showTime').innerHTML = `Total Duration: ${totalMinutes} minutes`
+    document.getElementById('showTime').innerHTML =`Current Time: ${currentMintues} minutes`
 }) 
 
-// const checkboxList = document.getElementById('checkboxList')
-// const totalDays = 31
+video.addEventListener('loadedmetadata', () => {
+    const totalMinutes = Math.floor(video.duration / 60)
+    return totalMinutes
+})
 
-// for(let i = 1; i <= totalDays; i++){
-//     // const label = document.createElement('label')
-//     // label.setAttribute('for', `day${i}`)
-//     // label.textContent = `Day ${i}`
-
-//     const checkbox = document.createElement('input')
-//     checkbox.type = 'checkbox'
-//     checkbox.id = `day${i}`
-//     checkbox.name = `day${i}`
-
-//     // checkboxList.appendChild(label)
-//     checkboxList.appendChild(checkbox)
-//     checkboxList.appendChild(document.createElement('br'))
-// }
+video.addEventListener('timeupdate', () => {
+    const currentMintues = Math.floor(video.currentTime / 60)
+    return currentMintues
+})

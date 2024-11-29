@@ -10,7 +10,7 @@ body{
 }
 header{
     background-color: #fca311;
-    padding: 10px;
+    padding: 1px;
     margin: auto;
 }
 
@@ -55,18 +55,20 @@ button:hover{
 .checkboxContainer {
     background-color: magenta;
     font-family: Arial, Helvetica, sans-serif;
-    width: 270px;
-    height: 270px;
+    width: 240px;
+    height: 320px;
     padding: 20px 40px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: auto;
+    box-shadow: 0px 0px 10px #1b2021;
 }
 .checkboxContainer h1{
     font-size: 1.5rem;
-    color: #333;
+    color: #fdf0d5;
+    text-shadow: 0px 0px 3px #333;
     margin: 0px;
 }
 
