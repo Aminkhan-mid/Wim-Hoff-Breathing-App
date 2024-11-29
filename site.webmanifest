@@ -4,8 +4,8 @@
     "description": "A personal Wim Hoff Breathwork exercise app.",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#0078d7",
+    "background_color": "#fefae0",
+    "theme_color": "#c1121f",
     "icons": [
       {
         "src": "/icons/icon-192x192.png",
