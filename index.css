@@ -4,9 +4,11 @@ body{
     box-sizing: border-box;
     text-align: center;
     /* background-color: #fadde1; */
-    background-image: url('https://i.pinimg.com/originals/bf/de/43/bfde434abdae2f1d273a03bb983f7394.gif');
+
+    background-image: url('https://i.pinimg.com/originals/2e/b2/8f/2eb28fc38dc8ab9b668221f2f3733c47.gif');
     background-size: cover;
     background-repeat: no-repeat;
+
     font-family: sans-serif;
     width: 100%;
     height: 100vh;
@@ -103,26 +105,28 @@ header{
 
 .breathContainer{
     position: relative;
-    width: 80%;
-    max-width: 720px;
-    margin: 0px auto;
+    width: 240px;
+    height: 280px;
+    padding: 20px 40px;
+    margin: auto;
 }
 .hidden{
     display: none;
 }
 .breathVideo{
-    width: 400px;
-    border-radius:18px;
+    width: 240px;
+
+    border-radius:50px;
 } 
 
 .toggleBtnTwo{
-    border: none;
+    border: 1px solid black;
     cursor: pointer;
     background-color: #ccd5ae;
     width: 50px;
     height: 30px;
     border-radius: 40px;
     position: absolute;
-    top: 300px;
-    right: 180px;
+    top: 195px;
+    right: 50px;
 }
