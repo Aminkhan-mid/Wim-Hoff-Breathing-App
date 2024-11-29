@@ -5,6 +5,8 @@ const videoTwo = document.getElementById('breathVideo')
 const toggleBtn = document.getElementById('toggleBtn')
 const toggleBtnEnergy = document.getElementById('toggleBtnEnergy')
 
+const takeBreathBtn = document.getElementById('quickBreath')
+const closeQuickBreath = document.getElementById('closeQuickBreath')
 
 
 
@@ -32,15 +34,12 @@ toggleBtnEnergy.addEventListener('click', function(){
     }
 })
 
-const takeBreathBtn = document.getElementById('quickBreath')
+
 
 takeBreathBtn.addEventListener('click', function(){
-    let breathContainer = document.getElementById('breathContainer')
-
-    if(!breathContainer){
-        renderBreathWork()
-        breathContainer = document.getElementById('breathContainer')
-    }
-    breathContainer.classList.toggle('hidden')
+   document.getElementById('breathContainer').style.display = 'block'
 })
 
+closeQuickBreath.addEventListener('click', function (){
+    document.getElementById('breathContainer').style.display = 'none'
+})
