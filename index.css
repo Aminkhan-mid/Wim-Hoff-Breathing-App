@@ -30,12 +30,12 @@ header{
     margin: 20px auto;
 }
 .audioCover{
-    width: 400px;
+    width: 100%;
     height: 300px;
     border-radius: 30px;
     margin: auto;
     background-image: url('https://i.pinimg.com/originals/59/ff/d7/59ffd7bc7ff27e43d402aca42f6dec03.gif');
-    background-size: cover;
+    background-size: contain;
     position: relative;
 }
 .controls{
