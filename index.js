@@ -42,4 +42,5 @@ takeBreathBtn.addEventListener('click', function(){
 
 closeQuickBreath.addEventListener('click', function (){
     document.getElementById('breathContainer').style.display = 'none'
+    location.reload()
 })
