@@ -31,7 +31,7 @@ header{
 .audioCover{
     margin: 20px 0px;
     position: relative;
-    border: 1px solid lime;
+    border: 1px dotted lime;
     width: 320px;
     height: 280px;
     border-radius: 18px;
@@ -39,7 +39,7 @@ header{
 .firstControls{
     position: absolute;
     top: 150px;
-    right: 160px;
+    right: 145px;
 }
 
 .toggleBtnOne{
