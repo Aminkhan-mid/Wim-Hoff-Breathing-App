@@ -23,29 +23,29 @@ header{
     margin: auto;
 }
 
-.videoContainer{
+.audioContainer{
     position: relative;
     width: 80%;
     max-width: 720px;
     margin: 20px auto;
 }
 .audioCover{
-    width: 100%;
-    height: 100vh;
+    width: 305px;
+    height: 230px;
+    padding: 20px 40px;
     border-radius: 30px;
     margin: auto;
     background-image: url('https://i.pinimg.com/originals/59/ff/d7/59ffd7bc7ff27e43d402aca42f6dec03.gif');
     background-size: cover;
-
 }
 .controls{
     margin-top: 10px;
     display: flex;
     justify-content: center;
     gap: 10px;
-    /* position: absolute;
+    position: absolute;
     top: 110px;
-    right: 325px; */
+    right: 325px;
 }
 
 .toggleBtnOne{
