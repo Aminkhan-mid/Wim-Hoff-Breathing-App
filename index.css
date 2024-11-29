@@ -39,7 +39,7 @@ header{
 .firstControls{
     position: absolute;
     top: 10px;
-    right: 601px;
+    right: 60px;
 }
 
 .toggleBtnOne{
@@ -67,8 +67,7 @@ header{
 }
 .checkboxContainer h1{
     font-size: 1.5rem;
-    color: #fbebd2;
-    text-shadow: 0px 0px 3px black;
+    color: #151517;
     font-weight: bold;
     margin: 0px;
 }
