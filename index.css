@@ -31,15 +31,15 @@ header{
 .audioCover{
     margin: 20px 0px;
     position: relative;
-    border: 1px dotted lime;
+    border: 1px solid lime;
     width: 320px;
     height: 280px;
     border-radius: 18px;
 }
 .firstControls{
     position: absolute;
-    top: 160px;
-    right: 140px;
+    top: 150px;
+    right: 160px;
 }
 
 .toggleBtnOne{
