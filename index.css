@@ -24,17 +24,12 @@ header{
 }
 
 .audioContainer{
-    position: relative;
     margin: 20px auto;
 }
 .audioCover{
-    width: 305px;
-    height: 230px;
-    padding: 20px 40px;
-    border-radius: 30px;
-    margin: auto;
-    background-image: url('https://i.pinimg.com/originals/59/ff/d7/59ffd7bc7ff27e43d402aca42f6dec03.gif');
-    background-size: cover;
+    width: 350px;
+    height: 300px;
+    border-radius: 18px;
     position: relative;
 }
 .controls{
@@ -43,7 +38,7 @@ header{
     justify-content: center;
     gap: 10px;
     position: absolute;
-    top: 100px;
+    top: 230px;
     left: 610px;
 }
 
@@ -125,18 +120,19 @@ header{
     width: 280px;
     margin: auto;
     border-radius:50px;
+    position: relative;
 } 
 
 .toggleBtnTwo{
     border: 1px solid black;
     cursor: pointer;
-    background-color: #ccd5ae;
+    background-color: #d9ed92;
     width: 50px;
     height: 30px;
     border-radius: 40px;
     position: absolute;
-    top: 235px;
-    right: 50px;
+    top: -9px;
+    right: 310px;
 }
 
 footer{
