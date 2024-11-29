@@ -35,4 +35,5 @@ toggleBtnEnergy.addEventListener('click', function(){
 
 takeBreathBtn.addEventListener('click', () => {
     breathContainer.classList.toggle('hidden')
+    this.location.reload()
 })
