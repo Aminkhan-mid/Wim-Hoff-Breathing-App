@@ -14,11 +14,9 @@ toggleBtn.addEventListener('click', () => {
     if(hofAudio.paused){
         hofAudio.play()
         toggleBtn.textContent = 'Pause'
-        toggleBtn.style.backgroundColor = '#e76f51'
     } else {
         hofAudio.pause()
         toggleBtn.textContent = 'Play'
-        toggleBtn.style.backgroundColor = '#c1121f'
     }
 }) 
 
