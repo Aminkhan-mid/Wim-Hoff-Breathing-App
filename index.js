@@ -13,7 +13,7 @@ const breathContainer =   document.getElementById('breathContainer')
 toggleBtn.addEventListener('click', () => {
     if(hofAudio.paused){
         hofAudio.play()
-        toggleBtn.textContent = 'Pause'
+        toggleBtn.innerHTML = '<i class="fa-solid fa-pause"></i>'
     } else {
         hofAudio.pause()
         toggleBtn.textContent = 'Play'
