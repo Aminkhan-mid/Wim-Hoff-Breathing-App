@@ -1,4 +1,4 @@
-const videoOne = document.getElementById('myVideo')
+const hofAudio = document.getElementById('hofAudio')
 const videoTwo = document.getElementById('breathVideo')
 
 
@@ -11,12 +11,12 @@ const breathContainer =   document.getElementById('breathContainer')
 
 
 toggleBtn.addEventListener('click', () => {
-    if(videoOne.paused){
-        videoOne.play()
+    if(hofAudio.paused){
+        hofAudio.play()
         toggleBtn.innerHTML = '<i class="fa-solid fa-pause"></i>'
         toggleBtn.style.backgroundColor = '#e76f51'
     } else {
-        videoOne.pause()
+        hofAudio.pause()
         toggleBtn.innerHTML = '<i class="fa-solid fa-play"></i>'
         toggleBtn.style.backgroundColor = '#c1121f'
     }
