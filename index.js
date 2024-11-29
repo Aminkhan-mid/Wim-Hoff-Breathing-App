@@ -14,7 +14,7 @@ toggleBtn.addEventListener('click', () => {
     if(hofAudio.paused){
         hofAudio.play()
         toggleBtn.innerHTML = '<i class="fa-solid fa-pause"></i>'
-        toggleBtn.style.right = '135px'
+        toggleBtn.style.right = '115px'
         toggleBtn.style.backgroundColor = '#eb5e28'
     } else {
         hofAudio.pause()

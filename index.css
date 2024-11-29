@@ -31,7 +31,7 @@ header{
 .audioCover{
     margin: 20px 0px;
     position: relative;
-    border: 1px dotted red;
+    border: 1px dotted lime;
     width: 320px;
     height: 280px;
     border-radius: 18px;
