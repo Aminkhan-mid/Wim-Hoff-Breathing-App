@@ -3,7 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     text-align: center;
-    background-color: #fadde1;
+    background-color: #ccd5ae;
 
     background-image: url('https://i.pinimg.com/originals/2e/b2/8f/2eb28fc38dc8ab9b668221f2f3733c47.gif');
     background-size: cover;
@@ -18,7 +18,7 @@ header{
     background-size: cover;
     background-position: bottom;
     color: wheat;
-    text-shadow: 0px 0px 3px #1b2021;
+    text-shadow: 0px 0px 5px #1b2021;
     padding: 1px;
     margin: auto;
 }
@@ -53,7 +53,6 @@ header{
     border-radius: 5px;
     cursor: pointer;
     transition:background-color 0.3s;
-    box-shadow: 0px 0px 10px;
 }
 
 .toggleBtnOne:hover{
@@ -90,10 +89,11 @@ header{
 }
 
 .quickBreath{
-    background-color: #151517;
-    color: #fbebd2;
+    background-color: #fbebd2;
+    color: #151517;
+    font-weight: bold;
     width: fit-content;
-    margin: 60px auto;
+    margin: 50px auto;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
