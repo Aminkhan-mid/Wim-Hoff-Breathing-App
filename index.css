@@ -9,7 +9,10 @@ body{
     height: 100vh;
 }
 header{
-    background-color: #fca311;
+    background-image: url('https://i.pinimg.com/originals/63/b7/77/63b777bb69ae070f7d112719f63b0f4d.gif');
+    background-size: cover;
+    background-position: bottom;
+    color: wheat;
     padding: 1px;
     margin: auto;
 }
@@ -44,6 +47,7 @@ button{
     border-radius: 5px;
     cursor: pointer;
     transition:background-color 0.3s;
+    box-shadow: 0px 0px 10px;
 }
 
 button:hover{
