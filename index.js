@@ -11,23 +11,10 @@ toggleBtn.addEventListener('click', () => {
     if(video.paused){
         video.play()
         toggleBtn.textContent = 'Pause'
+        toggleBtn.style.backgroundColor = '#e76f51'
     } else {
         video.pause()
         toggleBtn.textContent = 'Play'
+        toggleBtn.style.backgroundColor = '#c1121f'
     }
-    const totalMinutes = Math.floor(video.duration / 60)
-    const currentMintues = Math.floor(video.currentTime / 60)
-
-    document.getElementById('showTime').innerHTML = `Total Duration: ${totalMinutes} minutes`
-    document.getElementById('showTime').innerHTML =`Current Time: ${currentMintues} minutes`
 }) 
-
-video.addEventListener('loadedmetadata', () => {
-    const totalMinutes = Math.floor(video.duration / 60)
-    return totalMinutes
-})
-
-video.addEventListener('timeupdate', () => {
-    const currentMintues = Math.floor(video.currentTime / 60)
-    return currentMintues
-})
